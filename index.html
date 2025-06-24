@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANMI - Assistente Regolamento</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f4f6f9;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .header {
+            text-align: center;
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        .anchor {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            color: #2c5aa0;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            color: #2c5aa0;
+            margin-bottom: 0.5rem;
+        }
+
+        .header h2 {
+            font-size: 1.2rem;
+            color: #666;
+            font-weight: normal;
+            margin-bottom: 2rem;
+        }
+
+        .description {
+            font-size: 1.1rem;
+            color: #555;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .chatbot-info {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .chatbot-info h3 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+        }
+
+        .chatbot-info p {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .pulse-dot {
+            width: 12px;
+            height: 12px;
+            background: #4ade80;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 8px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.1); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 2rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .header {
+                padding: 1.5rem;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .anchor {
+                font-size: 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="anchor">⚓</div>
+            <h1>ANMI</h1>
+            <h2>Associazione Nazionale Marinai d'Italia</h2>
+            <h3 style="color: #2c5aa0; font-weight: normal; margin-bottom: 1.5rem;">Gruppo di Brescia</h3>
+            <div class="description">
+                Benvenuto nel nostro assistente per il <strong>Regolamento ANMI</strong>.<br>
+                Fai le tue domande e ricevi risposte immediate e precise.
+            </div>
+        </div>
+
+        <div class="chatbot-info">
+            <h3>
+                <span class="pulse-dot"></span>
+                Assistente Regolamento Disponibile
+            </h3>
+            <p>
+                Clicca sull'icona del chat in basso a destra per iniziare.<br>
+                Puoi chiedere informazioni su iscrizioni, doveri dei soci, procedure e molto altro!
+            </p>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2025 ANMI - Marinai una volta, marinai per sempre!</p>
+        </div>
+    </div>
+
+    <!-- Chatbot Integration -->
+    <script> window.chtlConfig = { chatbotId: "2296686843" } </script>
+    <script async data-id="2296686843" id="chtl-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
+</body>
+</html>
